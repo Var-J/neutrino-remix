@@ -1,4 +1,3 @@
-import React from "react";
 import { Theme, useTheme } from "../../../utils/theme-provider";
 
 function ThemeToggle() {
