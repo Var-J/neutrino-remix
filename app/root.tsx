@@ -9,14 +9,14 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import tailwindStylesheetUrl from "./styles/tailwind.css";
+import stylesheet from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import Background from "./shared/components/Background";
 
 import { NonFlashOfWrongThemeEls, ThemeProvider, useTheme } from '../utils/theme-provider';
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
+  return [{ rel: "stylesheet", href: stylesheet }];
 };
 
 export async function loader({ request }: LoaderArgs) {
